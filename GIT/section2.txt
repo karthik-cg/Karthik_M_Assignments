@@ -1,0 +1,117 @@
+Karthik@Karthik MINGW64 ~/capg (master)
+$ cd assignments
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkart/CAPG/assignments/.git/
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git branch css-assignments
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git checkout master
+Already on 'master'
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git checkout
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ vi abc.css
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git add .
+warning: LF will be replaced by CRLF in abc.css.
+The file will have its original line endings in your working directory
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abc.css
+
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git commit -m "commiting abc.css"
+[css-assignments 6d089a1] commiting abc.css
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abc.css
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ vi README.txt
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git add .
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git commit -m "minor changes"
+[css-assignments c61b91b] minor changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git checkout
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ vi readme.txt
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git add .
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git commit -m "many chages"
+[master 4c50180] many chages
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ vi abc.css
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git add .
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git commit -m "minor css"
+[css-assignments d943b5e] minor css
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Karthik@Karthik MINGW64 ~/capg/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master|MERGING)
+$ ls
+README.txt  abc.css  kar.html
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master|MERGING)
+$ git branch
+  css-assignments
+* master
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master|MERGING)
+$ git branch -d css-assignments
+error: The branch 'css-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignments'.
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master|MERGING)
+$ git branch -D css-assignments
+Deleted branch css-assignments (was d943b5e).
+
+Karthik@Karthik MINGW64 ~/capg/assignments (master|MERGING)
+$

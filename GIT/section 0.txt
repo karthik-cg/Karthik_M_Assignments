@@ -1,0 +1,172 @@
+SECTION- 0
+
+1.
+
+Karthik@Karthik MINGW64 ~ (main)
+$ mkdir project_dir
+
+Karthik@Karthik MINGW64 ~ (main)
+$ cd project_dir
+------------------------------------------------------------------------------------------------------------------------------------------
+2.
+Karthik@Karthik MINGW64 ~/project_dir (main)
+$ git init
+Initialized empty Git repository in C:/Users/iamav/project_dir/.git/
+------------------------------------------------------------------------------------------------------------------------------------------
+3.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ touch index.html
+------------------------------------------------------------------------------------------------------------------------------------------
+4.
+Karthik@Karthik MINGW64~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+5.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git stage index.html
+
+------------------------------------------------------------------------------------------------------------------------------------------
+6.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git commit -m "Comitting the file"
+[master (root-commit) 46a3147] Comitting the file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+------------------------------------------------------------------------------------------------------------------------------------------
+7.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ touch info.txt
+------------------------------------------------------------------------------------------------------------------------------------------
+8.
+
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+------------------------------------------------------------------------------------------------------------------------------------------
+9.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ nano .gitignore
+
+Karthik@Karthik MINGW64~/project_dir (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+
+------------------------------------------------------------------------------------------------------------------------------------------
+10.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+------------------------------------------------------------------------------------------------------------------------------------------
+11.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git commit index.html
+[master f906aa1] First comment
+ 1 file changed, 1 insertion(+)
+
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+-----------------------------------------------------------------------------------------------------------------------------------------
+12.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git log
+commit 46ba0308f754c7a3443a883c87782321ac8b24d0 (HEAD -> master)
+
+
+    Comitting the file
+------------------------------------------------------------------------------------------------------------------------------------------
+13.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ vi index.html
+------------------------------------------------------------------------------------------------------------------------------------------
+14.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git checkout -- index.html
+-----------------------------------------------------------------------------------------------------------------------------------------
+15.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ vi index.html
+------------------------------------------------------------------------------------------------------------------------------------------
+16.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git stage index.html
+------------------------------------------------------------------------------------------------------------------------------------------
+
+17.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git reset --soft HEAD~1
+
+------------------------------------------------------------------------------------------------------------------------------------------
+18.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git config --global alias.my-add add
+------------------------------------------------------------------------------------------------------------------------------------------
+19.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git my-add index.html
+
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git commit -m "using my-add commit"
+[master 8a22cd5] using my-add commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+20.
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git reset --soft HEAD~1
+
+Karthik@Karthik MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
