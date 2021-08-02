@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <bean name="set1" class="springcorecollections.quesSet">
+   
+   <property name="addresses">
+   
+   <set>
+   
+   <value>Lingampally</value>
+   <value>Chandanagar</value>
+   <value>Miyapur</value>   
+   
+   </set>
+   
+   </property>
+   </bean>
+  
+   </beans>
