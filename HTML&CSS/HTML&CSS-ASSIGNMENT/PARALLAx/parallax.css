@@ -1,0 +1,68 @@
+
+  body, html {
+    height:100%;
+    margin:0;
+    font-size:20px;
+    font-family:"Lucidia-console", monospace;
+    font-weight:400;
+    line-height:1.8em;
+    color:black;
+  }
+  
+  
+  .parallax1, .parallax2{
+    background-image: url('cg3.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+
+  .section-1, .section-2{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:black;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+ 
+
+  .button{
+    background: black;
+    border-radius: 12px;
+    font-family:"Brush Script MT";
+    border:1px solid black;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-top: 50px;
+    
+  }
+  .button:hover{
+    opacity: 0.5;
+  }
